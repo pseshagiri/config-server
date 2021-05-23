@@ -1,0 +1,18 @@
+spring:
+ application:
+  name: organization-service
+  
+server:
+ port: 8084
+
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8085/eureka  
+ 
+ logging:
+  pattern:
+   console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+    
+springdoc:
+  packagesToScan: com.seshagiri
