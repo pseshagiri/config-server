@@ -1,13 +1,11 @@
-spring:
- application:
-  name: discovery-service
 server:
  port: 8085
+
 eureka:
  instance:
   host:name: localhost
  client:
   serviceUrl: http://${eureka.instance.hostname}:${server.port}/eureka
-  registerWithServer: false
-  fetchRegistery: false
+  registerWithEureka: false
+  fetchRegistry: false
   
